@@ -1,0 +1,39 @@
+ALGORITHM types CHECKPOINT3
+var 
+S : string;
+i,j, k : integer; 
+numberWords, numberVowels: integer; 
+sum : INTEGER := 0;
+i:=0
+
+
+
+begin
+
+read (S)
+while ( S[i] <>0 );
+length(s) := length(s)+1;
+i:=i+1;
+end-while
+
+while ( j < length(s)) do
+if (S[j]:="") then 
+numberWords := numberWords+1;
+end if
+j:= j+1
+end while
+
+
+while ( k < length(s)) do 
+if 
+(S[k] : = "a" or  S[k] : = "e"  or S[k] = "i" or S[k] = "o" or S[k] = "u" ) THEN 
+
+numberWords := numberVowels+1;
+    END_IF
+    k:=k+1;
+    END_WHILE
+
+    Write(S,numberWords,numberVowels);
+
+END
+
